@@ -1,3 +1,4 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 body {
   font-family: "Lato",sans-serif;
   margin: 0;
@@ -15,6 +16,13 @@ header {
 	display: flex;
 	align-items:center; 
   }
+ .logo_top:hover {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
 .logo{
 	width: 154px;
   height: 37px;
@@ -39,6 +47,14 @@ header {
 .baner span{
   	text-transform:uppercase;
   }
+.fa-angle-down{
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  padding-top: 180px;
+}
+  
 h1{
 	font-size: 120px;
   font-weight: bold;
@@ -47,10 +63,13 @@ h1{
   margin:0;
   padding-top: 180px;
 }
-.line { 
+hr { 
   width: 600px;
   height: 2px;
   margin:10px 0px 40px 0px;
+  color: #15a4fa;
+  background-color:#15a4fa;
+  border: none; 
   }
 .button {
   border-style: solid;
@@ -65,12 +84,11 @@ h1{
   line-height: 2.611;
   text-align: center;
 }
-.arrow {
-  width: 20px;
-  height: 12px;
-  padding-top: 180px;
+ button:hover {
+  background-color: #15a4fa;
 }
-.content{
+
+#content {
   width:1170px;
   height:1580px;
   margin-left: 210px;
@@ -122,6 +140,13 @@ h2{
   height:100px; 
   padding-top: 0;
 }
+.icon:hover {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+ }
 h3{
   font-size: 22px;
   color:#2d3950;
@@ -151,6 +176,13 @@ h3{
 .p_img{
   width:360px;
   height:260px;
+   background: url(../img/background_works.png);}
+
+.p_img:hover{
+opacity:0.9;
+}
+.p_img .work_top:hover {
+    opacity:0.5;
 }
 .form_connect{
   width:1600px;
@@ -233,6 +265,9 @@ input[type="submit"] {
   -webkit-transform: matrix( 1.00000041181408,0,0,1.00000182787911,0,0);
   -ms-transform: matrix( 1.00000041181408,0,0,1.00000182787911,0,0);
 }
+input[type="submit"]:hover{
+  background: #15a4fa;
+}
 footer{
   height: 90px;
   display: flex;
@@ -242,15 +277,60 @@ footer{
   line-height: 1.2;
   text-align: left;
   padding-left: 225px;
-}
+
+ }
 footer span{
   text-transform:uppercase;
 }
 .social_icon{
   margin-left: 792px;
+  display: flex;
+  flex-wrap:wrap;
 }
-.social_link{
-  width:40px;
-  height:40px;
+footer .social .fa-linkedin, footer .social .fa-google-plus, footer .social .fa-twitter, footer .social .fa-facebook {
+  margin-top: 10px;
+}
+footer .social a {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  float: right;
+  background: #15a4fa;
+  border: transparent;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15), inset 0 0 50px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15), inset 0 0 50px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  color: #ffffff;
   margin-left: 5px;
 }
+.linkedin a:hover {
+  background: #0e76a8;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.facebook a:hover {
+  background: #3b5998;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.google-pluse a:hover {
+  background: #DD4B39;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.twitter a:hover {
+  background: #00acee;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+
